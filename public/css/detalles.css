@@ -1,0 +1,251 @@
+:root{
+    --heightImg: 70px;
+}
+
+.boxDetalleProducts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding: 30px 40px 40px 40px;
+}
+
+.contentDetallesProduct{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentDetallesDetalles{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    min-height: 300px;
+}
+
+.imgProducto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.imgProducto img{
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.sourseDetalles{
+    flex: 1;
+}
+
+.details{
+    background-color: var(--colorElements);
+    color: var(--fuenteElements);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 5px;
+    flex: 3;
+}
+
+.boxInputEnvio select{
+    background-color: transparent;
+    color: var(--fuenteElements);
+    border: 1px solid var(--fuenteElements);
+    border-radius: 5px;
+}
+
+.boxInputEnvio option{
+    background-color: var(--colorHeader);
+    color: var(--fuenteHeader);
+}
+
+.boxInputCantidad{
+    display: flex;
+    gap: 5px;
+}
+
+.inputCantidad{
+    background-color: transparent;
+    color: var(--fuenteElements);
+    border: 1px solid var(--fuenteElements);
+    padding: 0  0 0 10px;
+    border-radius: 5px;
+}
+
+/*------------------ Descripcion -----------------------------------------------------*/
+
+.descripcionProductosDetalles{
+    background-color: var(--colorElements);
+    color: var(--fuenteElements);
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.descripcionProductosDetalles h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*------------------------- Comentarios ----------------------------------------------------*/
+
+.comentariosAddShow{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    align-items: start;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.comentariosAddShow h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.comentariosAddShow h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.comentariosShow{
+    background-color: var(--colorElements);
+    color: var(--fuenteElements);
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.comentariosAdd{
+    background-color: var(--colorElements);
+    color: var(--fuenteElements);
+    border-radius: 5px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comentariosAdd i{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--btnConfirm);
+}
+
+.sinComentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.writtingComentario{
+    width: 100%;
+    height: 150px;
+    background-color: var(--hoverIconFondo);
+    color: var(--fuenteElements);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.scoreAdd{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btnEnviar{
+    display: flex;
+    justify-content: end;
+}
+
+/* ---------------------------- Img -------------------------------------*/
+
+.imgBoxImgs{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    height: var(--heightImg);
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-items: center;
+    background-color: var(--colorElements);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.sliderImg{
+    display: flex;
+    overflow: hidden;
+    min-width: 100%;
+}
+
+.boxSliderImg{
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    min-width: 100%;
+}
+
+.imgSlider{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.arrowSliderD{
+    font-size: 50px;
+}
+
+.tittleImg{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 10px 20px;
+}
+
+.tittleImg h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tittleImg i{
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tittleImg i:hover{
+    background-color: var(--hoverIconFondo);
+}
+
+
+/*--------------imgBigAbsolute -----------------------*/
+
+.imgBigAbsolute{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.452);
+    align-items: center;
+    justify-content: center;
+}
+
+.closeImg{
+    position: absolute;
+    top: 15px;
+    right: 300px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+.imgBigAbsolute img{
+    width: 600px;
+    height: 600px;
+}
